@@ -1,0 +1,149 @@
+body {
+	font-family: 'sans-serif';
+	margin: 0;
+}
+
+body#wikiHome {
+	background: rgb(226,226,226); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 19%, rgba(209,209,209,1) 19%, rgba(209,209,209,1) 19%, rgba(219,219,219,1) 19%, rgba(219,219,219,1) 19%, rgba(209,209,209,1) 19%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(209,209,209,1) 19%,rgba(209,209,209,1) 19%,rgba(209,209,209,1) 19%,rgba(219,219,219,1) 19%,rgba(219,219,219,1) 19%,rgba(209,209,209,1) 19%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(226,226,226,1) 0%,rgba(209,209,209,1) 19%,rgba(209,209,209,1) 19%,rgba(209,209,209,1) 19%,rgba(219,219,219,1) 19%,rgba(219,219,219,1) 19%,rgba(209,209,209,1) 19%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+}
+
+h1     { margin: 0px; }
+img    { width: 100%; }
+iframe { border: 0; width: 100%; height: 800px; }
+
+#OCLogo { background-image: url("../images/OC_Logo_100.jpg"); width: 100px; height: 100px; }
+
+#leftBar                 { width: 20%; float: left; padding: 15px 0px 40px 15px; border-right: 1px solid darkgrey; border-radius: 25px; box-shadow: 5px 10px #888888; }
+#leftBar #wikiTitle      { font-family: verdana; font-weight: bold; font-size: x-large; margin-bottom: 50px; }
+#leftBar #wikiTitle span { font-family: monospace; }
+#leftBar .listTitle      { font-weight: bold; font-family: sans-serif; }
+#leftBar ul              { list-style: none; padding: 0; margin: 0; }
+#leftBar li              { padding: 0em 0em .4em 1em; text-indent: -.7em;}
+#leftBar li::before      { content: "• "; color: red; }
+#leftBar li a            { text-decoration: none; }
+#leftBar li a:hover      { text-decoration: underline; }
+
+#mainContent { width: 77%; margin-left: 22%; }
+
+#framed h1 { text-align: center; font-family: 'Linux Libertine','Georgia','Times',serif; font-size: 3em; padding-top: 20px; }
+#framed h2 { border-bottom: 1px solid #a2a9b1; margin: 50px 20px 20px 20px; }
+
+#tpmBoard {
+	border: 10px solid red;
+}
+
+#tpmBoard div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#whoWeAre {
+	border-bottom: 5px solid red;
+	display: inline-table;
+	padding: 5px;
+}
+
+#whoWeAre #title {
+	width: 59%;
+	text-align: center;
+}
+
+#whoWeAre img {
+	width: 20%;
+}
+
+#whoWeAre #teamPicture {
+	
+}
+
+#whoWeAre #teamName {
+	display: block;
+	font-size: xx-large;
+}
+
+#whoWeAre #missionStatement {
+	
+}
+
+#ourPlan {
+	width: 20%;
+	margin-left: 5px;
+    margin-top: 5px;
+}
+
+#currentWork {
+	width: 50%;
+	padding: 5px;
+	border-color: red;
+    border-width: 0px 5px 0px 5px;
+    border-style: solid;
+}
+
+#currentWork img {
+	width: 40%;
+}
+
+#currentWork #htaMatrix,
+#currentWork #socHtaMap {
+	margin-left: 18%;
+}
+
+#currentWork #socHtaMap:hover {
+	cursor: pointer;
+}
+
+#currentWork #skillMatrix {
+	width: 58%;
+}
+
+#currentWork #cilCompletion {
+	margin-bottom: 30px;
+}
+
+#results {
+	width: 26%;
+	padding-top: 5px;
+}
+
+#results img {
+	width: 49%;
+}
+
+#fader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#floater {
+	position: absolute;
+}
+
+#floater img {
+	display: block;
+}
+
+#floaterTextBox {
+	width: 96.5%;
+    padding: 10px;
+    border: 1px solid;
+	background-color: white;
+}
+
+@media (max-width: 859px) {
+	#results {
+		width: 24%;
+	}
+	
+	#results img {
+		width: 45%;
+	}
+	
+	#whoWeAre #title {
+		width: 57%;
+	}
+}
